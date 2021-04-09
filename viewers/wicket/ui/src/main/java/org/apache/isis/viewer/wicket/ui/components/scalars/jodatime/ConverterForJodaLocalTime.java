@@ -29,8 +29,6 @@ public class ConverterForJodaLocalTime implements IConverter<LocalTime> {
     
     private static final long serialVersionUID = 1L;
     
-    public ConverterForJodaLocalTime() {}
-    
     public LocalTime convertToObject(String value, Locale locale) throws ConversionException {
         try {
             return LocalTime.parse(value);
